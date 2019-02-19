@@ -1,5 +1,5 @@
 # Sequence memory game
-Pick the correct colors in the order shown
+Pick the correct items in the order shown
 
 ## Introduction
 Welcome to the Letgo Fullstack technical test!
@@ -12,10 +12,10 @@ We expect from you a clean and well structured code.
 Each round adds one randomly item to the end of the sequence.
 
 #### Example
-We have 4 items, lets say: Dog, Cat, Hourse and Frog:
-* the first round Cat is highlighted and the user should click on Cat to pass to the next round.
-* for the second round Cat is highlighted and then Dog, so the user should click on Cat and then Dog.
-* for the third round Cat is highlighted, then Dog and then Cat again(because is randomly, so items can repeat), so the user should click on Cat, then Dog and then Cat again to pass to the next round.
+We have 4 items, lets say: **Dog, Cat, Hourse and Frog**:
+* the **first round Cat is highlighted** and the **user should click on Cat** to pass to the next round.
+* for the **second round Cat is highlighted and then Dog**, so the **user should click on Cat and then Dog**.
+* for the **third round Cat is highlighted, then Dog and then Cat again** (because is randomly, so items can repeat), so the **user should click on Cat, then Dog and then Cat again** to pass to the next round.
 
 This is a video of another example about this game but with colors: [youtube video](https://www.youtube.com/watch?v=1Yqj76Q4jJ4)
 
