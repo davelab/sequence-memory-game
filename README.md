@@ -26,7 +26,7 @@ You can use your favourite style library/preprocessor such a **less, stylus, sas
 
 The **items should be fetched from a public API** like [https://pokeapi.co/](https://pokeapi.co/). You can find many of them in the following repository: [Public APIs list](https://github.com/toddmotto/public-apis).
 
-Just keep in mind that the API chosen should allows you to **fetch a specific number of items**. For example, with the **pokeapi** you can call `https://pokeapi.co/api/v2/pokemon?limit=9` which returns the first 9 pokemons. You can use your favourite **library for fetching data**. We use **[axios]()**.
+Just keep in mind that the API chosen should allows you to **fetch a specific number of items**. For example, with the **pokeapi** you can call `https://pokeapi.co/api/v2/pokemon?limit=9` which returns the first 9 pokemons. You can use your favourite **library for fetching data**. We use **[axios](https://github.com/axios/axios)**.
 
 Additional features like unit testing, animations or whatever stuff you can imagine are very welcome :)
 
