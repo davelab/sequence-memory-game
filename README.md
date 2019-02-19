@@ -12,7 +12,7 @@ We expect from you a clean and well structured code.
 Each round adds one randomly item to the end of the sequence.
 
 #### Example
-We have 4 items, lets say: **Dog, Cat, Hourse and Frog**:
+We have 4 items, lets say: **Dog, Cat, Horse and Frog**:
 * the **first round Cat is highlighted** and the **user should click on Cat** to pass to the next round.
 * for the **second round Cat is highlighted and then Dog**, so the **user should click on Cat and then Dog**.
 * for the **third round Cat is highlighted, then Dog and then Cat again** (because is randomly, so items can repeat), so the **user should click on Cat, then Dog and then Cat again** to pass to the next round.
