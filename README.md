@@ -28,6 +28,8 @@ The **items should be fetched from a public API** like [https://pokeapi.co/](htt
 
 Just keep in mind that the API chosen should allows you to **fetch a specific number of items**. For example, with the **pokeapi** you can call `https://pokeapi.co/api/v2/pokemon?limit=9` which returns the first 9 pokemons. You can use your favourite **library for fetching data**. We use **[axios]()**.
 
+Additional features like unit testing, animations or whatever stuff you can imagine are very welcome :)
+
 ## How to deliver
 You have 2 options:
 
