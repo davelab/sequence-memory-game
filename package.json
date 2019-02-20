@@ -1,7 +1,7 @@
 {
   "name": "sequence-memory-game",
   "version": "1.0.0",
-  "description": "Pick the correct colors in the order shown",
+  "description": "Pick the correct items in the order shown",
   "main": "index.js",
   "repository": "https://github.com/gusbueno/sequence-memory-game.git",
   "author": "Gustavo Bueno <gustavo.bueno89@gmail.com>",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
+    "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
