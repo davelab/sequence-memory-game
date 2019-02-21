@@ -9,7 +9,7 @@ For this test we want to see your skills and knowledge by developing a small and
 We expect from you clean and well structured code.
 
 ## The Game
-Each round adds one random item to the end of the sequence.
+Each round adds one random item to the end of the sequence. When the sequence is finished the player has to click on the items in the order shown to pass to the next round.
 
 #### Example
 We have 4 items, lets say: **Dog, Cat, Horse and Frog**:
@@ -37,3 +37,10 @@ You have 2 options:
 
 * You can fork this repository and send us the url of your solution
 * Compress your solution (without the `/node_modules` and `/build` folders) and send us the zip file
+
+## How to run the project
+* Install the dependencies by running `yarn install`
+* Launch dev server by running `yarn start`
+* To create the production bundle just run `yarn build`
+
+If for you final solution we need to run something else (like `yarn test` for unit testing for example) please add it here :)
