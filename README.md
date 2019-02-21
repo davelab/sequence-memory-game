@@ -22,6 +22,8 @@ This is a video of another example about this game but with colors: [youtube vid
 ## Requirements
 You should use this project to develop your solution and use **React with Redux** (they are added in `package.json` file along with **redux-thunk, react-dom, and react-redux**)
 
+For us is important that the candidates have **strong styling knowledge** so we expect from you an **attractive and responsive** solution (no ui frameworks like bootstrap, material-ui...)
+
 You can use your favourite style library/preprocessor such a **less, stylus, sass, postCss**...we use **[styled-components](https://www.styled-components.com/)**. Bear in mind that depending on the tool you choose you may need to add some configuration to the **webpack.config.js** file.
 
 The **items should be fetched from a public API** like [https://pokeapi.co/](https://pokeapi.co/). You can find many of them in the following repository: [Public APIs list](https://github.com/toddmotto/public-apis).
@@ -30,13 +32,17 @@ The API chosen should allow you to **fetch a specific number of items**. For exa
 
 **[Javascript standard style](https://standardjs.com/)** is also installed and it will be run each time you commit something. We want to see how you adapt your code by working with a different style guide.
 
-Additional features like unit testing, animations or whatever stuff you can imagine are very welcome :)
+## Bonus
+* Data from **multiple APIs** and combining them (For example, combine pokemon API with Marvel API to show pokemons and Marvel characters)
+* Animations
+* Sounds
+* Server side rendering
+* Unit tests
+
+Additional features are very welcome :)
 
 ## How to deliver
-You have 2 options:
-
-* You can fork this repository and send us the url of your solution
-* Compress your solution (without the `/node_modules` and `/build` folders) and send us the zip file
+Compress your solution (without the `/node_modules` and `/build` folders) and send us the zip file
 
 ## How to run the project
 * Install the dependencies by running `yarn install`
