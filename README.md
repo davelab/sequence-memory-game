@@ -24,7 +24,7 @@ You should use this project to develop your solution and use **React with Redux*
 
 For us is important that the candidates have **strong styling knowledge** so we expect from you an **attractive and responsive** solution (no ui frameworks like bootstrap, material-ui...)
 
-You can use your favourite style library/preprocessor such a **less, stylus, sass, postCss**...we use **[styled-components](https://www.styled-components.com/)**. Bear in mind that depending on the tool you choose you may need to add some configuration to the **webpack.config.js** file.
+You can use your favourite style library/preprocessor such a **less, stylus, sass or any CSS-in-JS**...we use **[styled-components](https://www.styled-components.com/)**. Bear in mind that depending on the tool you choose you may need to add some configuration to the **webpack.config.js** file.
 
 The **items should be fetched from a public API** like [https://pokeapi.co/](https://pokeapi.co/). You can find many of them in the following repository: [Public APIs list](https://github.com/toddmotto/public-apis).
 
