@@ -7,7 +7,8 @@ const defaultStore = {
   memory: {
     round: 0,
     sequence: [],
-    matching: []
+    matching: [],
+    registred: false
   }
 };
 

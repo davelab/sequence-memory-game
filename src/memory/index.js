@@ -1,10 +1,17 @@
-// const generateNumber = max => Math.floor(Math.random() * max + 1);
+import { interval } from "rxjs";
+import { take, finalize } from "rxjs/operators";
 
-// const generateSequence = (round = 0, maxItem = 9, speed = 2) => {
-//   const sequenceLenght = 3 + round;
+export const generateNumber = max => Math.floor(Math.random() * max + 1);
 
-//   [...Array(sequenceLenght)].
+const generateSequence = (round = 0, speed = 1, callback) => {
+  const sequenceLength = 3 + round;
 
-// };
+  const speedInterval = interval(speed * 1000);
 
-// export default generateSequence;
+  return speedInterval.pipe(
+    take(sequenceLength),
+    finalize(() => callback())
+  );
+};
+
+export default generateSequence;

@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import Pokemon from "./Pokemon";
 import { PokemonListGrid } from "./PokemonList.style";
 import { mapStateToProps, mapDispatchToProps } from "./PokemonList.connector";
-import generateSequence from "../../memory";
 
 class PokemonList extends PureComponent {
   componentDidMount() {
@@ -13,8 +12,7 @@ class PokemonList extends PureComponent {
   componentDidUpdate({ loading }) {
     const { loading: currentLoading, data } = this.props;
     if (loading && currentLoading !== loading && data.length) {
-      console.log("init sequence", data.length);
-      generateSequence(data.length);
+      this.props.initSequence();
     }
   }
 
