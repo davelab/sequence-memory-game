@@ -1,4 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const selectedStyle = ({ selected }) =>
+  selected &&
+  css`
+    background: #b9eb83;
+  `;
 
 export const PokemonStyled = styled.div`
   width: 200px;
@@ -10,4 +16,7 @@ export const PokemonStyled = styled.div`
   border-radius: 4px;
   border: 1px solid #f2f2f2;
   text-transform: capitalize;
+  transition: background 0.25s ease-in-out;
+  cursor: pointer;
+  ${selectedStyle}
 `;

@@ -1,16 +1,17 @@
 import { interval } from "rxjs";
-import { take, finalize } from "rxjs/operators";
+import { take, finalize, delay } from "rxjs/operators";
 
 export const generateNumber = max => Math.floor(Math.random() * max + 1);
 
 const generateSequence = (round = 0, speed = 1, callback) => {
   const sequenceLength = 3 + round;
+  const speedInMs = speed * 1000;
 
-  const speedInterval = interval(speed * 1000);
+  const speedInterval = interval(speedInMs);
 
   return speedInterval.pipe(
     take(sequenceLength),
-    finalize(() => callback())
+    finalize(() => setTimeout(() => callback(), speedInMs))
   );
 };
 

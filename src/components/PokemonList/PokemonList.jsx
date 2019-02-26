@@ -26,7 +26,7 @@ class PokemonList extends PureComponent {
     return (
       <PokemonListGrid>
         {data.map(({ name }, i) => (
-          <Pokemon key={name} name={name} index={i} />
+          <Pokemon key={name} name={name} index={i + 1} />
         ))}
       </PokemonListGrid>
     );

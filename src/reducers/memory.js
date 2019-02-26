@@ -1,4 +1,8 @@
-import { REGISTER_SEQUENCE, SEQUENCE_REGISTRED } from "../actions/memory";
+import {
+  REGISTER_SEQUENCE,
+  SEQUENCE_REGISTRED,
+  SET_MATCHING_NUMBER
+} from "../actions/memory";
 import defaultStore from "../store/defaultStore";
 
 const memory = (state = defaultStore.memory, action) => {
@@ -7,6 +11,8 @@ const memory = (state = defaultStore.memory, action) => {
       return { ...state, sequence: [...state.sequence, action.number] };
     case SEQUENCE_REGISTRED:
       return { ...state, registred: true };
+    case SET_MATCHING_NUMBER:
+      return { ...state, matching: [...state.matching, action.number] };
 
     default:
       return state;

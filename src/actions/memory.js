@@ -5,6 +5,7 @@ export const GAME_OVER = "GAME_OVER";
 export const INIT_SEQUENCE = "INIT_SEQUENCE";
 export const REGISTER_SEQUENCE = "REGISTER_SEQUENCE";
 export const SEQUENCE_REGISTRED = "SEQUENCE_REGISTRED";
+export const SET_MATCHING_NUMBER = "SET_MATCHING_NUMBER";
 
 export const getNextLevel = () => ({
   type: NEXT_LEVEL
@@ -22,6 +23,17 @@ export const registerSequence = number => ({
 export const sequenceRegistred = () => ({
   type: SEQUENCE_REGISTRED
 });
+
+export const setMatchingNumber = number => ({
+  type: SET_MATCHING_NUMBER,
+  number
+});
+
+export const createMatchingSequence = number => {
+  return (dispatch, getState) => {
+    dispatch(setMatchingNumber(number));
+  };
+};
 
 export const initSequence = () => {
   return (dispatch, getState) => {
