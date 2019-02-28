@@ -7,7 +7,11 @@ export const REGISTER_SEQUENCE = "REGISTER_SEQUENCE";
 export const SEQUENCE_REGISTRED = "SEQUENCE_REGISTRED";
 export const SET_MATCHING_NUMBER = "SET_MATCHING_NUMBER";
 
-export const getNextLevel = () => ({
+const isEqual = (arr1, arr2) => {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+};
+
+export const setNextLevel = () => ({
   type: NEXT_LEVEL
 });
 
@@ -32,6 +36,15 @@ export const setMatchingNumber = number => ({
 export const createMatchingSequence = number => {
   return (dispatch, getState) => {
     dispatch(setMatchingNumber(number));
+    const { memory } = getState();
+    const { sequence, matching } = memory;
+    if (sequence.length === matching.length) {
+      if (isEqual(sequence, matching)) {
+        dispatch(setNextLevel());
+        return dispatch(initSequence());
+      }
+      return dispatch(gameOver());
+    }
   };
 };
 

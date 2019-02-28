@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import GlobalStyle from "./index.style";
 import PokemonList from "./components/PokemonList/PokemonList";
+import Result from "./components/Result/Result";
 
 import rootReducer from "./reducers";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -17,6 +18,7 @@ const store = createStore(
 render(
   <Provider store={store}>
     <GlobalStyle />
+    <Result />
     <PokemonList />
   </Provider>,
   document.getElementById("root")

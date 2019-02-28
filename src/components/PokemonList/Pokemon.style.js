@@ -14,9 +14,9 @@ export const PokemonStyled = styled.div`
   justify-content: center;
   margin: 4px;
   border-radius: 4px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #ddd;
   text-transform: capitalize;
-  transition: background 0.25s ease-in-out;
+  transition: background 0.1s ease-in-out;
   cursor: pointer;
   ${selectedStyle}
 `;

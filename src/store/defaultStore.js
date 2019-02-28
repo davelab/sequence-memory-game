@@ -8,7 +8,8 @@ const defaultStore = {
     round: 0,
     sequence: [],
     matching: [],
-    registred: false
+    registred: false,
+    gameOver: false
   }
 };
 
